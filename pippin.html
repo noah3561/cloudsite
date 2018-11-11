@@ -1,0 +1,222 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Noah Heath">
+        <meta name="description" content="The official website for the Cloud Development discord server">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Cloud Development's Website">
+        <meta property="og:url" content="https://noah3561/github.io/cloud/">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Cloud Development">
+        <meta property="og:description" content="The official website for the Cloud Development discord server">
+        <meta property="og:image" content="https://cdn.discordapp.com/icons/502895390807293963/bbe154e742024ea3e71f57e4be43b7a4.png?size=2048" height="100" width="100">
+        <link rel="shortcut icon" href="https://cdn.discordapp.com/icons/502895390807293963/bbe154e742024ea3e71f57e4be43b7a4.png?size=2048">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="button.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+        <title>Pippin</title>
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("body").css("display", "none");
+                $("body").fadeIn(2000);
+            });
+        </script>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="index.html"><i class="fa fa-home"></i> Home</a>
+            <a href="about.html"><i class="fa fa-clipboard"></i> About Us</a>
+            <a href="bots.html"><i class="fa fa-robot"></i> Bots</a>
+            <a class="sub" href="watcher.html">Watcher</a>
+            <a class="active" href="pippin.html">Pippin</a>
+            <a href="staff.html"><i class="fa fa-crown"></i> Staff</a>
+            <a href="donators.html "><i class="fa fa-money"></i> Donators</a>
+            <a href="contact.html"><i class="fa fa-envelope"></i> Contact</a>
+        </div>
+        <h1 class="stafftitle">Pippin</h1>
+        <h4 class="staffdesc">The best new moderation bot! Pippin has utility commands such as serverinfo and userinfo, while also being highly customizable by being able to have per server prefixes, custom suggestion and report channels per server, and more!</h4>
+        <table class="pure-table centertable pure-table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="4" class="centertext">Base Commands</th>
+                </tr>
+                <tr>
+                    <th>Command</th>
+                    <th>Aliases</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="ping">
+                    <td>ping</td>
+                    <td>ping</td>
+                    <td class="tabletextwrap">Returns the websocket and message ping of the bot</td>
+                    <td>p!ping</td>
+                </tr>
+                <tr class="help">
+                    <td>help</td>
+                    <td>help</td>
+                    <td class="tabletextwrap">Returns the list of commands available to you</td>
+                    <td>p!help</td>
+                </tr>
+                <tr class="avatar">
+                    <td>avatar</td>
+                    <td>avatar</td>
+                    <td class="tabletextwrap">Returns the requested users avatar, or the command authors avatar is no user is issued</td>
+                    <td>p!avatar (user)</td>
+                </tr>
+                <tr class="invite">
+                    <td>invite</td>
+                    <td>invite</td>
+                    <td class="tabletextwrap">Returns the invite for the bot</td>
+                    <td>p!invite</td>
+                </tr>
+                <tr class="serverinfo">
+                    <td>serverinfo</td>
+                    <td>serverinfo, server<br>si, guildinfo<br>guild, gi</td>
+                    <td class="tabletextwrap">Returns information for the server you are currently in</td>
+                    <td>p!serverinfo</td>
+                </tr>
+                <tr class="userinfo">
+                    <td>userinfo</td>
+                    <td>userinfo, user<br>ui</td>
+                    <td class="tabletextwrap">Returns information for the user you requested</td>
+                    <td>p!userinfo (user)</td>
+                </tr>
+                <tr class="shard">
+                    <td>shard</td>
+                    <td>shard</td>
+                    <td class="tabletextwrap">Returns the shard that your server is currently on</td>
+                    <td>p!shard</td>
+                </tr>
+				<tr class="uptime">
+                    <td>uptime</td>
+                    <td>uptime</td>
+                    <td class="tabletextwrap">Returns the bots uptime</td>
+                    <td>p!uptime</td>
+                </tr>
+				<tr class="botstats">
+				
+                    <td>botstats</td>
+                    <td>botstats</td>
+                    <td class="tabletextwrap">Returns the bots stats and module information</td>
+                    <td>p!botstats</td>
+                </tr>
+				<tr class="suggest">
+                    <td>suggest</td>
+                    <td>suggest</td>
+                    <td class="tabletextwrap">Puts your suggestion into your guild's suggestion channel, if the suggestion system module is enabled and the suggestion channel is set</td>
+                    <td>p!suggest &lt;suggestion></td>
+                </tr>
+				<tr class="report">
+                    <td>report</td>
+                    <td>report</td>
+                    <td class="tabletextwrap">Reports the specified user for the specified reason into your guild's suggestion channel, if the report module is enabled and the reports channel is set</td>
+                    <td>p!report &lt;user> &lt;reason></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p>⠀</p>
+        
+		<table class="pure-table centertable pure-table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="4" class="centertext">Setting Commands</th>
+                </tr>
+                <tr>
+                    <th>Command</th>
+                    <th>Aliases</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="settings">
+                    <td>settings</td>
+                    <td>settings</td>
+                    <td class="tabletextwrap">Returns the current settings list for your guild</td>
+                    <td>p!settings</td>
+                </tr>
+                <tr class="prefix">
+                    <td>prefix</td>
+                    <td>prefix</td>
+                    <td class="tabletextwrap">Used to set the custom prefix for your guild or to reset it back to p!</td>
+                    <td>p!prefix &lt;set> &lt;new prefix><br />p!prefix &lt;reset></td>
+                </tr>
+                <tr class="modlog">
+                    <td>modlog</td>
+                    <td>modlog, mod-log</td>
+                    <td class="tabletextwrap">Used to set the mod log channel for your guild or to reset it back to none</td>
+                    <td>p!modlog &lt;set> &lt;channel><br />p!modlog &lt;reset></td>
+                </tr>
+                <tr class="modrole">
+                    <td>modrole</td>
+                    <td>modrole, mod-role</td>
+                    <td class="tabletextwrap">Used to set the mod role for your guild or to reset it back to none</td>
+                    <td>p!modrole &lt;set> &lt;channel><br />p!modrole &lt;reset></td>
+                </tr>
+                <tr class="serverlog">
+                    <td>serverlog</td>
+                    <td>serverlog, server-log</td>
+                    <td class="tabletextwrap">Used to set the server log channel for your guild or reset it back to none</td>
+                    <td>p!serverlog &lt;set> &lt;channel><br />p!serverlog &lt;reset></td>
+                </tr>
+                <tr class="memberlog">
+                    <td>memberlog</td>
+                    <td>memberlog, member-log</td>
+                    <td class="tabletextwrap">Used to set the member log channel for your guild or reset it back to none</td>
+                    <td>p!memberlog &lt;set> &lt;channel><br />p!memberlog &lt;reset></td>
+                </tr>
+                <tr class="suggestsystem">
+                    <td>suggestsystem</td>
+                    <td>suggestsystem<br>suggest-system</td>
+                    <td class="tabletextwrap">Used to enable or disable the suggestion system for your guild.</td>
+                    <td>p!suggestsystem &lt;on/off></td>
+                </tr>
+                <tr class="suggestchannel">
+                    <td>suggestchannel</td>
+                    <td>suggestchannel<br>suggest-channel</td>
+                    <td class="tabletextwrap">Used to set the suggestion channel for your guild to be used with the suggest command</td>
+                    <td>p!suggestchannel &lt;set> &lt;channel><br>p!suggestchannel &lt;reset></td>
+                </tr>
+				<tr class="reportsystem">
+                    <td>reportsystem</td>
+                    <td>reportsystem<br>report-system</td>
+                    <td class="tabletextwrap">Used to enable or disable the report system for your guild.</td>
+                    <td>p!reportsystem &lt;on/off></td>
+                </tr>
+				<tr class="reportchannel">
+                    <td>reportchannel</td>
+                    <td>reportchannel<br>report-channel</td>
+                    <td class="tabletextwrap">Used to set the report channel for your guild to be used with the report command</td>
+                    <td>p!reportchannel &lt;set> &lt;channel><br>p!reportchannel &lt;reset></td>
+                </tr>
+            </tbody>
+        </table>
+        
+		<p>⠀</p>
+        <p>⠀</p>
+        <p>⠀</p>
+		
+		<div class="footer">
+			<button class="button button-blurple button-box button-giant button-longshadow" onclick="location.href='https://discord.gg/WVaJu4s'">
+			    <i class="fab fa-discord"></i>
+		    </button>
+		    <button class="button button-caution button-box button-giant button-longshadow" onclick="location.href='https://www.youtube.com/channel/UC0ivjl27be6peRU9z3a9i8Q'">
+			    <i class="fab fa-youtube"></i>
+		    </button>
+		    <button class="button button-highlight button-box button-giant button-longshadow" onclick="location.href='https://github.com/CodeX-Development'">
+			    <i class="fab fa-github"></i>
+		    </button>
+		    <button class="button button-primary button-box button-giant button-longshadow" onclick="location.href='https://twitter.com/_codexdev'">
+			    <i class="fab fa-twitter"></i>
+		    </button>
+		</div>
+    </body>
+</html>
